@@ -1,0 +1,15 @@
+name: Dream Agency
+type: theme
+description: "Custom theme with React"
+core_version_requirement: ^8||^9
+base theme: stable9
+
+libraries:
+  - 'dream_agency/global'
+
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer: Footer

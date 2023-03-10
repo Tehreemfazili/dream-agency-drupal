@@ -1,0 +1,26 @@
+global:
+  css:
+    theme:
+      dist/css/style.css: {}
+  dependencies:
+    - dream_agency/components
+
+
+
+slick:
+  css:
+    theme:
+      assets/libraries/slick/slick.css: {}
+  js:
+    assets/libraries/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+
+
+components:
+  js:
+    dist/js/slider.js: {}
+  dependencies:
+    - core/jquery
+    # - core/drupal
+    - dream_agency/slick

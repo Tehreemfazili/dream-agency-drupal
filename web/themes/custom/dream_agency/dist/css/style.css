@@ -1,0 +1,108 @@
+.main-menu {
+  padding: 20px 258px;
+  background: #F4F5F7; }
+  .main-menu__list {
+    display: flex;
+    list-style: none; }
+  .main-menu__item a {
+    text-decoration: none;
+    padding-right: 28px;
+    color: #1E212C;
+    font-size: 18px; }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.hero-section {
+  background: #F4F5F7;
+  padding: 80px 258px; }
+  .hero-section__body {
+    font-size: 20px;
+    color: #1E212C; }
+
+.hero-banner {
+  display: flex; }
+  .hero-banner__image {
+    width: 60%;
+    position: relative; }
+  .hero-banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .hero-banner__content-title {
+      font-size: 28px; }
+    .hero-banner__content-heading {
+      font-size: 64px; }
+  .hero-banner__btn {
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #FF5A30;
+    border-radius: 4px;
+    width: 268px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px; }
+    .hero-banner__btn a {
+      text-decoration: none;
+      color: #fff; }
+
+.hero-footer__description {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 60px; }
+
+.slick__controls__arrows {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+  margin-bottom: 30px; }
+  .slick__controls__arrows .slick-prev::before {
+    content: url("../../assets/svg/left-arrow.svg"); }
+  .slick__controls__arrows .slick-next::before {
+    content: url("../../assets/svg/right-arrow.svg"); }
+  .slick__controls__arrows button {
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    width: 31px;
+    background: none; }
+
+.slick__controls__dots .slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 8px;
+  width: 100%; }
+
+.slick__controls__dots li {
+  width: 100%;
+  margin: 0 10px; }
+
+.slick__controls__dots button {
+  font-size: 0;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: #c9c9c9;
+  transition: background-color 200ms ease-in-out; }
+
+.slick__controls__dots li.slick-active button {
+  background: #003145;
+  border-radius: 50px; }
