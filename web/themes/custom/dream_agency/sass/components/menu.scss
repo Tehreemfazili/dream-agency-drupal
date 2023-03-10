@@ -1,9 +1,19 @@
-.main-menu {
+header {
     padding: 20px 258px;
     background: #F4F5F7;
+
+    div {
+        display: flex;
+    }
+}
+
+.main-menu {
+    margin-left: 40px;
     &__list {
         display: flex;
         list-style: none;
+        margin: auto;
+        justify-content: center;
     }
 
     &__item a{

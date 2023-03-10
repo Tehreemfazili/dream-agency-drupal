@@ -15,6 +15,10 @@
         }
     }
 
+    .slick-arrow:hover {
+      
+    }
+
     button {
         border: none;
         // color: $oc-blue;
@@ -25,7 +29,10 @@
         // transition: color $animation;
 
         &:hover {
-            // color: $oc-orange;
+            background-color: #FF5A30;
+            border-radius: 50%;
+            color: white;
+            padding: 2px;
         }
     }
 }

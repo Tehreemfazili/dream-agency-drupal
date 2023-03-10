@@ -34,16 +34,11 @@ tests/screenshots
 /web/sites/*/files-private
 /storage
 
-#Ignore files in local docker env
-web/sites/docker.local/osborneclarke-d8.local/files
 
 # Ignore paths that may contain temporary files
 /sites/*/translations
 /sites/*/tmp
 /sites/*/cache
-
-# Ignore the certs folder
-certs/*.key
 
 # Ignore all sass cache
 .sass-cache

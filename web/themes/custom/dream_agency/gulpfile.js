@@ -9,7 +9,7 @@ const minify = require('gulp-minify');
 
 const paths = {
     styles: {
-      src: 'sass/styles.scss',
+      src: 'sass/style.scss',
       dest: 'dist/css'
     },
     scripts: {
@@ -18,17 +18,18 @@ const paths = {
     }
   };
 
-//  function styles() {
-//     return gulp.src(paths.styles.src)
-//       .pipe(sass())
-//     //   .pipe(cleanCSS())
-//       // pass in options to the stream
-//     //   .pipe(rename({
-//     //     basename: 'main',
-//     //     suffix: '.min'
-//     //   }))
-//       .pipe(gulp.dest(paths.styles.dest));
-//   }
+ function styles() {
+    return gulp.src(paths.styles.src)
+      .pipe(sass())
+      .pipe(gulp.dest(paths.styles.dest));
+    //   .pipe(cleanCSS())
+    //   pass in options to the stream
+    //   .pipe(rename({
+    //     basename: 'main',
+    //     suffix: '.min'
+    //   }))
+      
+  }
   
  function scripts() {
     return gulp.src(paths.scripts.src)
@@ -43,11 +44,11 @@ const paths = {
     */
   function watchFiles() {
     watch(paths.scripts.src, scripts);
-    // watch(paths.styles.src, styles);
+    watch(paths.styles.src, styles);
   }
 
   exports.default = series(
-    // styles,
+    styles,
     scripts,
     watchFiles
   )
