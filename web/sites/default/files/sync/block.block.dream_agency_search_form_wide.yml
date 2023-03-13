@@ -1,0 +1,23 @@
+uuid: d9daefb9-a7ab-49ae-8688-f5d57b74b1a1
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - dream_agency
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: dream_agency_search_form_wide
+theme: dream_agency
+region: header
+weight: -2
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

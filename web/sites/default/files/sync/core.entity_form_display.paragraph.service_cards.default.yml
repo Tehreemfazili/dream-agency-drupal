@@ -1,0 +1,55 @@
+uuid: d918402d-113b-419e-b7e8-aaf6d9280d87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_cards.field_footer_link
+    - field.field.paragraph.service_cards.field_service_card_image
+    - field.field.paragraph.service_cards.field_service_card_subtitle
+    - field.field.paragraph.service_cards.field_service_card_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.service_cards
+  module:
+    - image
+    - link
+    - text
+id: paragraph.service_cards.default
+targetEntityType: paragraph
+bundle: service_cards
+mode: default
+content:
+  field_footer_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_service_card_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_service_card_subtitle:
+    type: text_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_service_card_title:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

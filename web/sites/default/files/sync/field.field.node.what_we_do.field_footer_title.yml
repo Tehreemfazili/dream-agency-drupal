@@ -1,0 +1,21 @@
+uuid: 7be429b6-d560-45c2-8f36-f2560e885b56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer_title
+    - node.type.what_we_do
+  module:
+    - text
+id: node.what_we_do.field_footer_title
+field_name: field_footer_title
+entity_type: node
+bundle: what_we_do
+label: 'Footer title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

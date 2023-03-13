@@ -1,0 +1,22 @@
+uuid: 3573a0df-f204-4cb4-ad80-5b765e85d4b4
+langcode: en
+status: false
+dependencies:
+  theme:
+    - dream_agency
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: dream_agency_primary_local_tasks
+theme: dream_agency
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

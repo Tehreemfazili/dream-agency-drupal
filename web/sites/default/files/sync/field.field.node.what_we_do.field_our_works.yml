@@ -1,0 +1,40 @@
+uuid: 1e75a6aa-6ac5-4e57-843d-0dd68a2d2439
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_our_works
+    - node.type.what_we_do
+    - paragraphs.paragraphs_type.our_work
+  module:
+    - entity_reference_revisions
+id: node.what_we_do.field_our_works
+field_name: field_our_works
+entity_type: node
+bundle: what_we_do
+label: 'Our works'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      our_work: our_work
+    negate: 0
+    target_bundles_drag_drop:
+      our_work:
+        weight: 5
+        enabled: true
+      service_card_subtitle:
+        weight: 6
+        enabled: false
+      service_cards:
+        weight: 7
+        enabled: false
+      social_media:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

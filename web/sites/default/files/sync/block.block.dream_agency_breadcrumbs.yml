@@ -1,0 +1,22 @@
+uuid: d60a96c1-3e92-4ee3-b38c-63d236fc45d5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - dream_agency
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: dream_agency_breadcrumbs
+theme: dream_agency
+region: header
+weight: 4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

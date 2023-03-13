@@ -1,0 +1,22 @@
+uuid: 7526cbcb-5ca5-4c0d-b26b-c3c705f16cd5
+langcode: en
+status: false
+dependencies:
+  theme:
+    - dream_agency
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: dream_agency_secondary_local_tasks
+theme: dream_agency
+region: header
+weight: 3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 9938038e-15d2-4fe7-94b5-de4c54fb04bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form_title
+    - node.type.what_we_do
+  module:
+    - text
+id: node.what_we_do.field_form_title
+field_name: field_form_title
+entity_type: node
+bundle: what_we_do
+label: 'Form title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

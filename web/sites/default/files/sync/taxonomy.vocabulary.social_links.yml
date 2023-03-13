@@ -1,0 +1,8 @@
+uuid: ae8c8967-0ce9-401c-bc16-77f897403fad
+langcode: en
+status: true
+dependencies: {  }
+name: 'social links'
+vid: social_links
+description: ''
+weight: 0

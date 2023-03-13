@@ -1,0 +1,20 @@
+uuid: 56f7391b-740a-4aba-ab4f-f581a9bdadd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_her
+field_name: field_her
+entity_type: node
+type: text
+settings:
+  max_length: 100
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

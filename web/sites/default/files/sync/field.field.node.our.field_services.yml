@@ -1,0 +1,21 @@
+uuid: aca5aa9e-f5a5-4635-885b-c96990e7d27e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services
+    - node.type.our
+  module:
+    - text
+id: node.our.field_services
+field_name: field_services
+entity_type: node
+bundle: our
+label: 'Services title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

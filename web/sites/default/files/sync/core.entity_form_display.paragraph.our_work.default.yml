@@ -1,0 +1,45 @@
+uuid: 108124bc-509f-4114-b0a4-521e11a62ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_work.field_bg_image
+    - field.field.paragraph.our_work.field_work_icon
+    - field.field.paragraph.our_work.field_work_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.our_work
+  module:
+    - image
+    - text
+id: paragraph.our_work.default
+targetEntityType: paragraph
+bundle: our_work
+mode: default
+content:
+  field_bg_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_work_icon:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_work_title:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

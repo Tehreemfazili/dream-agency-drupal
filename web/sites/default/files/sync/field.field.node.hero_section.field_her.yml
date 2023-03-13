@@ -1,0 +1,21 @@
+uuid: 803495bb-a60b-4c50-87e0-a1989d91b571
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_her
+    - node.type.hero_section
+  module:
+    - text
+id: node.hero_section.field_her
+field_name: field_her
+entity_type: node
+bundle: hero_section
+label: 'Hero description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

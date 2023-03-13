@@ -1,0 +1,25 @@
+uuid: cf5a1261-581c-4416-9680-0c6b3fafcc3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dream_agency
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: dream_agency_site_branding
+theme: dream_agency
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

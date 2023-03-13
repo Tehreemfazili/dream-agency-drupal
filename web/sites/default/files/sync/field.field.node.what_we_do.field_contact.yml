@@ -1,0 +1,32 @@
+uuid: eaa1868b-a860-42c2-a91f-43b21d2e8904
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.what_we_do
+    - webform.webform.contact_form
+  module:
+    - webform
+id: node.what_we_do.field_contact
+field_name: field_contact
+entity_type: node
+bundle: what_we_do
+label: 'contact form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 7a6ee341-2f9c-4669-b7f8-6fe75984c9a5
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

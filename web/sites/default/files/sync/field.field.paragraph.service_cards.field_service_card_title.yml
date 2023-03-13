@@ -1,0 +1,21 @@
+uuid: f5b44f29-5d6e-4d37-8c86-9a6407d78165
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_card_title
+    - paragraphs.paragraphs_type.service_cards
+  module:
+    - text
+id: paragraph.service_cards.field_service_card_title
+field_name: field_service_card_title
+entity_type: paragraph
+bundle: service_cards
+label: 'service card title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

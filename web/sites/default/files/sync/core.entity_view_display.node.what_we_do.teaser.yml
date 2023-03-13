@@ -1,0 +1,84 @@
+uuid: daaa483c-8827-4650-9889-643bee14291f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.what_we_do.field_contact
+    - field.field.node.what_we_do.field_footer_link
+    - field.field.node.what_we_do.field_footer_title
+    - field.field.node.what_we_do.field_form_title
+    - field.field.node.what_we_do.field_our_work_subtitle
+    - field.field.node.what_we_do.field_our_works
+    - field.field.node.what_we_do.field_title
+    - node.type.what_we_do
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+    - webform
+id: node.what_we_do.teaser
+targetEntityType: node
+bundle: what_we_do
+mode: teaser
+content:
+  field_contact:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_footer_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_footer_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_form_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_our_work_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_our_works:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  links: true
