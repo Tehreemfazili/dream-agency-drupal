@@ -16,10 +16,20 @@ body {
 
 .layout-content {
     // margin: 0 345px;
+    width: 60%;
 }
 
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.content-main {
+     display: flex;
+    // justify-content: space-around;
+}
+
+.layout-sidebar-second {
+    width: 25%;
 }

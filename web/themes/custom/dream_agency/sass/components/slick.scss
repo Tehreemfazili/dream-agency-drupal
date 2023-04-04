@@ -4,6 +4,10 @@
     justify-content: end;
     margin-bottom: 30px;
 
+    @include respond((max: $xl-break)) {
+        margin-top: 22px;
+    }
+
     .slick-prev {
         &::before {
             content: url('../../assets/svg/left-arrow.svg');
@@ -13,10 +17,6 @@
         &::before {
             content: url('../../assets/svg/right-arrow.svg');
         }
-    }
-
-    .slick-arrow:hover {
-      
     }
 
     button {

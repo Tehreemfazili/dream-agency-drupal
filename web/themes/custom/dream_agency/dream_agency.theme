@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Implements hook_theme_suggestions_views_view_unformatted_alter().
+ */
+function dream_agency_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables)
+{
+    $id = $variables['view']->id();
+    $display = $variables["view"]->current_display;
+    $suggestions[] = "views_view_unformatted__" . $id . "_" . $display;
+
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof NodeInterface) {
+        $bundle_name = $node->bundle();
+        $suggestions[] = "views_view_unformatted__" . $bundle_name . "_" . $id . "_" . $display;
+    }
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function dream_agency_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+{
+    $id = $variables['view']->id();
+    $display = $variables["view"]->current_display;
+
+    $suggestions[] = "views_view__" . $id . "_" . $display;
+
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof NodeInterface) {
+        $bundle_name = $node->bundle();
+        $suggestions[] = "views_view__" . $bundle_name . "_" . $id . "_" . $display;
+    }
+}

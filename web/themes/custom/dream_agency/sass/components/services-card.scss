@@ -1,14 +1,15 @@
 .services {
     // display: flex;
     text-align: center;
-    padding: 80px 258px;
-   &-card {
+    padding: 60px 0;
+
+    &-card {
         display: flex;
-        height: 440px;
         background-color: white;
         border-radius: 8px;
         text-align: center;
         margin: 30px 0;
+        flex-wrap: wrap;
         justify-content: center;
 
         img {
@@ -16,8 +17,15 @@
             height: 345px;
         }
 
-        div:not(:last-child) {
+        & > div:not(:last-child) {
             margin-right: 20px;
+        }
+
+        & > div {
+                @include respond((max: $xl-break)) {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
         }
     }
 
@@ -30,6 +38,10 @@
             padding-right: 16px;
             font-weight: 700;
             font-size: 28px;
+
+            @include respond((max: $xl-break)) {
+                margin-bottom: 22px;
+            }
         }
 
         &__link a {
@@ -40,6 +52,10 @@
             border-radius: 4px;
             text-transform: uppercase;
             font-weight: 700;
+        }
+
+        @include respond((max: $xl-break)) {
+            flex-direction: column;
         }
     }
 }
@@ -79,5 +95,13 @@
             text-decoration: none;
             font-weight: 700;
         }
+    }
+}
+
+.services-views {
+    text-align: center;
+
+    header {
+        background-color: none;
     }
 }

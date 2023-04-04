@@ -6,11 +6,18 @@
         color: #1E212C;
     }
 
+    @include respond((max: $xl-break)) {
+        padding: 80px 40px;
+    }
 }
 
 .hero-banner {
     display: flex;
     position: relative;
+
+    @include respond((max: $xl-break)) {
+        flex-direction: column;
+    }
 
     &__social-icons {
 
@@ -22,6 +29,11 @@
             display: flex;
             position: absolute;
             bottom: 0;
+
+            @include respond((max: $xl-break)) {
+                position: static;
+                margin-top: 20px;
+            }
         }
     }
     
@@ -31,6 +43,11 @@
         width: 70%;
         margin-left: -87px;
         position: relative;
+
+        @include respond((max: $xl-break)) {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 
     &__content {
@@ -45,6 +62,11 @@
 
         &-heading {
             font-size: 64px;
+
+            @include respond((max: $xl-break)) {
+                font-size: 38px;
+                margin-top: 22px;
+            }
         }
     }
 
